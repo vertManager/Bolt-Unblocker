@@ -64,6 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
             changeFavicon("/assets/imgs/otherlogos/clever.jpg");
             document.title = 'Clever | Portal';
             break;
+        case 'schoology':
+            changeFavicon("/assets/imgs/otherlogos/schoology.ico");
+            document.title = 'Home | Schoology';
+            break;
         case 'desmos':
             changeFavicon("/assets/imgs/otherlogos/desmos.png");
             document.title = 'Desmos | Graphing Calculator';

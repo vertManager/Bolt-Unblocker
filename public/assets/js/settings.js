@@ -7,6 +7,7 @@ const classroom = document.getElementById('google-classroom');
 const clever = document.getElementById('clever');
 const desmos = document.getElementById('desmos');
 const bolt = document.getElementById('bolt');
+const schoology = document.getElementById('schoology');
 const bugDialogToggle = document.getElementById('bug-dialog-toggle');
 const blooket = document.getElementById('blooket');
 const gimkit = document.getElementById('gimkit');
@@ -21,12 +22,8 @@ const sjDecode = document.getElementById('sjdecoder');
 const sjDecodeButton = document.getElementById('decodesj');
 const proxySelect = document.getElementById('proxy-select');
 const transportSelect = document.getElementById('transport-select');
-const boltPremium = document.getElementById('bolt-premium');
-const premiumActivate = document.getElementById('activate-premium');
 const searchEngineSelect = document.getElementById('search-engine');
 const performaceMode = document.getElementById('activate-upm');
-const adsDisable = document.getElementById('disable-ads');
-const WEBHOOK_URL = 'https://discord.com/api/webhooks/1369096278142746665/xELduKuAgvubhRUj1Oah8QHCIEE2fr6WTAZtkRh4dKIY0kW8Zrsy3mqEn43kBKo-tohK';
 
 document.addEventListener('DOMContentLoaded', () => {
     initTooltips();
@@ -85,6 +82,10 @@ clever.addEventListener('click', () => {
 });
 desmos.addEventListener('click', () => {
     localStorage.setItem('cloak', 'desmos');
+    window.top.location.reload();
+});
+schoology.addEventListener('click', () => {
+    localStorage.setItem('cloak', 'schoology');
     window.top.location.reload();
 });
 bolt.addEventListener('click', () => {
